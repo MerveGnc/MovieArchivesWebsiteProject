@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Film Arşivleri Sitesi</title>
+<style>
+body {
+font-family: "Georgia", Serif;
+    background-image: url("arkaplan.jpeg");
+  filter: contrast(3.5); /* Kontrastı artırma */
+  color: navy ; /* Yazı rengi beyaz */
+  font-weight: bold; /* Yazı kalınlığı */
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 90vh;
+}
+
+.container {
+  text-align: center;
+  margin-top: 20px;
+}
+h1 {
+  font-size: 40px;
+}
+
+p {
+  font-size: 20px;
+}
+audio::-webkit-media-controls-panel {
+background-color: rgba(0, 0, 0, 0.5);
+  color: #000000;
+  width: 30px; 
+  height: auto; 
+}
+</style>
+</head>
+<body>
+<div class="container">
+<h1>Film Arşivleri Sitesine Hoşgeldiniz!</h1>
+ <p><a href="/login"> Üye Giriş</a></p>
+ <p> <a href="/adminlogin"> Admin Giriş</a></p>
+ <p><a href="/guestPage">Misafir Giriş</a></p>
+ </div>
+ <audio controls autoplay>
+  <source src="GOT.mp3" type="audio/mpeg">
+</audio>
+</body>
+</html>

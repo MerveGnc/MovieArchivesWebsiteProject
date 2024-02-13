@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Film Arşiv Sitesi Üye Giriş</title>
+    <style>
+body {
+font-family: "Georgia", Serif;
+    background-image: url("arkaplan.jpeg");
+  filter: contrast(3.5); /* Kontrastı artırma */
+  color: navy ; /* Yazı rengi beyaz */
+  font-weight: bold; /* Yazı kalınlığı */
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 90vh;
+}
+
+.container {
+  text-align: center;
+  margin-top: 20px;
+}
+h1 {
+  font-size: 40px;
+}
+h2 {
+  font-size: 30px;
+}
+
+p {
+  font-size: 20px;
+}
+</style>
+</head>
+<body>
+<div class="container">
+    <h1>Film Arşiv Sitesine Hoşgeldiniz</h1>
+    
+    <h2>Giriş Yap</h2>
+   <form action="/login" method="POST">
+        <label for="username">Kullanıcı Adı:</label>
+        <input type="text" id="username" name="username" required><br>
+        
+        <label for="password">Şifre:</label>
+        <input type="password" id="password" name="password" required><br>
+        
+        <input type="submit" value="Giriş Yap">
+    </form>
+    
+    
+    <p><a href="/signup">Kayıt Ol</a></p>
+    
+   </div>
+</body>
+</html>

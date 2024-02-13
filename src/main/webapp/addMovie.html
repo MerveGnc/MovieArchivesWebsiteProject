@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Film Ekle</title>
+    <style>
+body {
+font-family: "Georgia", Serif;
+    background-image: url("movie.jpeg");
+  filter: contrast(3.5); /* Kontrastı artırma */
+  color: navy ; /* Yazı rengi beyaz */
+  font-weight: bold; /* Yazı kalınlığı */
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 90vh;
+}
+
+.container {
+  text-align: center;
+  margin-top: 20px;
+}
+h1 {
+  font-size: 40px;
+}
+h2 {
+  font-size: 30px;
+}
+
+p {
+  font-size: 20px;
+}
+</style>
+</head>
+<body>
+    <h1>Film Ekle</h1>
+    <form action="film-ekle" method="POST" enctype="multipart/form-data">
+        <label for="title">Başlık:</label>
+        <input type="text" id="title" name="title" required><br><br>
+        
+        <label for="director">Yönetmen:</label>
+        <input type="text" id="director" name="director" required><br><br>
+        
+        <label for="year">Yıl:</label>
+        <input type="number" id="year" name="year" required><br><br>
+        
+        <label for="category">Kategori:</label>
+        <input type="text" id="category" name="category" required><br><br>
+              
+        <input type="submit" value="Ekle">
+    </form>
+</body>
+</html>

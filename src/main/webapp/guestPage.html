@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+<style>
+body {
+font-family: "Georgia", Serif;
+    background-image: url("arkaplan.jpeg");
+  filter: contrast(3.5); /* Kontrastı artırma */
+  color: navy ; /* Yazı rengi beyaz */
+  font-weight: bold; /* Yazı kalınlığı */
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 90vh;
+}
+
+.container {
+  text-align: center;
+  margin-top: 20px;
+}
+h1 {
+  font-size: 40px;
+}
+
+p {
+  font-size: 20px;
+}
+</style>
+</head>
+<body>
+<div class="container">
+<h1>Film Arama</h1>
+    <form action="/filmler" method="get">
+        <label for="filmAdi">Film Adı ile Arama:</label>
+        <input type="text" id="filmAdi" name="filmAdi" placeholder="Film Adı">
+        <button type="submit">Ara</button>
+    </form>
+    
+    <form action="/movies-search" method="GET">
+     <label for="category">Kategori Adı ile Arama:</label>
+    <input type="text" name="category" placeholder="Kategori Adı" />
+    <button type="submit">Ara</button>
+</form>
+    
+     <p> <a href="/movies">Film Arşivi</a></p>
+    
+   </div>
+</body>
+</html>
